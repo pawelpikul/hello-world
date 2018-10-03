@@ -8,3 +8,12 @@ export class G964 {
     return filteredArray.sort();
   }
 }
+
+//better version:
+
+export class G964 {
+  public static inArray(a1: string[], a2: string[]): string[] {
+  
+    return a1.filter( x => a2.some( y => y.includes(x))).sort();
+  }
+}
