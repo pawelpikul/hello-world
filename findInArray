@@ -1,0 +1,10 @@
+export class G964 {
+  public static inArray(a1: string[], a2: string[]): string[] {
+  
+    var filteredArray = a1.filter( function(elem) {
+      return a2.find( subElem => subElem.includes(elem));
+    });
+    
+    return filteredArray.sort();
+  }
+}
